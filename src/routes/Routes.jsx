@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Root from '../components/Root'
 import Home from '../pages/Home'
 import TvDetail from "../pages/TvDetail"
+import Search from '../pages/search'
 
 export default function Routes() {
     const router = createBrowserRouter([
@@ -16,6 +17,10 @@ export default function Routes() {
                 {
                   path: 'tvshows/:id',
                   element: <TvDetail/>,
+                },
+                {
+                  path: 'Search',
+                  element: <Search/>,
                 },
             ]
         },
